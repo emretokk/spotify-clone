@@ -8,13 +8,13 @@ export class TopLeft extends Component {
   }
   render() {
     return (
-      <div className="topLeft flex flex-col justify-around text-spotify-text-color rounded-lg mb-2 bg-spotify-background-gray w-full h-32">
-        <div className="home flex flex-row hover:text-white hover:cursor-pointer font-circularStdMed">
-          <GoHomeFill className="ml-4 mr-4 text-2xl"></GoHomeFill>
+      <div className="topLeft flex flex-col justify-center gap-4 text-spotify-text-color rounded-lg mb-2 bg-spotify-background-gray w-full h-32">
+        <div className="home flex flex-row hover:text-white hover:cursor-pointer font-circularStdBold">
+          <GoHomeFill className=" ml-6 mr-4 text-2xl"></GoHomeFill>
           <div className="text-sm leading-7">Ana Sayfa</div>
         </div>
-        <div className="search flex flex-row hover:text-white hover:cursor-pointer font-circularStdBook">
-          <GoSearch className="ml-4 mr-4 text-2xl"></GoSearch>
+        <div className="search flex flex-row hover:text-white hover:cursor-pointer font-circularStdBold">
+          <GoSearch className="ml-6 mr-4 text-2xl"></GoSearch>
           <div className="text-sm leading-7">Ara</div>
         </div>
       </div>
