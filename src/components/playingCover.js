@@ -12,11 +12,9 @@ export class PlayingCover extends Component {
   }
   handleInCover = () => {
     this.setState({ mouseOnCover: true });
-    console.log("girdi");
   };
   handleOutCover = () => {
     this.setState({ mouseOnCover: false });
-    console.log("cikti");
   };
   render() {
     return (
