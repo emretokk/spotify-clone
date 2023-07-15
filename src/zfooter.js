@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { PlayingCover } from "./components/playingCover";
+import { PlayingBar } from "./components/playingBar";
+import { PlayingOptions } from "./components/playingOptions";
 
 export class Footer extends Component {
   constructor(props) {
@@ -7,8 +10,14 @@ export class Footer extends Component {
   }
   render() {
     return (
-      <div className="footer col-start-1 absolute bottom-0 bg-purple-400 w-screen h-24">
-        asdf
+      <div className="footer col-start-1 flex justify-between absolute bottom-0 bg-black w-screen h-24">
+        <PlayingCover
+          curPlayingName="Fly Forever"
+          curPlayingArtist="Pentagram"
+          liked="1"
+        ></PlayingCover>
+        <PlayingBar curPlayingLength="6:24"></PlayingBar>
+        <PlayingOptions></PlayingOptions>
       </div>
     );
   }

@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import { BiLibrary, BiPlus, BiRightArrowAlt } from "react-icons/bi";
 import { GoSearch, GoTriangleDown } from "react-icons/go";
+import { Playlist } from "./playlist";
+import likedSongs from "../assets/liked-songs.jpg";
+import beHumble from "../assets/bitch-be-humble.jpg";
+import chill from "../assets/chill.jpg";
+import drill from "../assets/drill.jpg";
+import muzeyyen from "../assets/muzeyyen.jpg";
+import sagobasyapitlar from "../assets/sagobasyapitlar.jpg";
+import explosive from "../assets/explosive.jpg";
+import elektro from "../assets/elektro.jpg";
 
 export class Library extends Component {
   constructor(props) {
@@ -9,7 +18,7 @@ export class Library extends Component {
   }
   render() {
     return (
-      <div className="library rounded-lg bg-spotify-background-gray h-full w-full">
+      <div className="library rounded-lg bg-spotify-background-gray w-full h-full">
         <div className="library-header mt-4 text-spotify-text-color">
           <div className="library-header-1 h-8 ml-6 flex items-center font-circularStdBold">
             <div className="library-wrapper flex hover:text-white hover:cursor-pointer">
@@ -37,15 +46,65 @@ export class Library extends Component {
               Sanatçılar
             </div>
           </div>
-          <div className="library-header-3"></div>
-        </div>
-        <div className="playlists flex justify-between text-spotify-text-color mt-4">
-          <div className="icon-shadow flex justify-center items-center ml-5 w-8 h-8 hover:rounded-full hover:cursor-pointer hover:bg-spotify-background-light-gray-2">
-            <GoSearch className="text-xl"></GoSearch>
-          </div>
-          <div className="order-menu mr-6 flex font-circularStdBook text-sm justify-center items-center hover:text-white hover:cursor-pointer">
-            Yakın Tarihli
-            <GoTriangleDown className="text-2xl ml-2"></GoTriangleDown>
+
+          <div className="playlists h-[30rem] overflow-y-scroll">
+            <div className="library-header-3 flex justify-between text-spotify-text-color mt-4">
+              <div className="icon-shadow flex justify-center items-center ml-5 w-8 h-8 hover:rounded-full hover:cursor-pointer hover:bg-spotify-background-light-gray-2">
+                <GoSearch className="text-xl"></GoSearch>
+              </div>
+              <div className="order-menu mr-2 flex font-circularStdBook text-sm justify-center items-center hover:text-white hover:cursor-pointer">
+                Yakın Tarihli
+                <GoTriangleDown className="text-2xl ml-2"></GoTriangleDown>
+              </div>
+            </div>
+            <Playlist
+              coverPicture={likedSongs}
+              playlistName="Beğenilen Şarkılar"
+              playlistType="Çalma Listesi"
+              count="297"
+            ></Playlist>
+            <Playlist
+              coverPicture={beHumble}
+              playlistName="bitch be humble"
+              playlistType="Çalma Listesi"
+              owner="Emre"
+            ></Playlist>
+            <Playlist
+              coverPicture={chill}
+              playlistName="drill"
+              playlistType="Çalma Listesi"
+              owner="Emre"
+            ></Playlist>
+            <Playlist
+              coverPicture={drill}
+              playlistName="bitch be humble"
+              playlistType="Çalma Listesi"
+              owner="Emre"
+            ></Playlist>
+            <Playlist
+              coverPicture={sagobasyapitlar}
+              playlistName="sago başyapıtlar"
+              playlistType="Çalma Listesi"
+              owner="Emre"
+            ></Playlist>
+            <Playlist
+              coverPicture={muzeyyen}
+              playlistName="müzeyyen bu derin bir tutku"
+              playlistType="Çalma Listesi"
+              owner="Emre"
+            ></Playlist>
+            <Playlist
+              coverPicture={explosive}
+              playlistName="explosive trap"
+              playlistType="Çalma Listesi"
+              owner="Emre"
+            ></Playlist>
+            <Playlist
+              coverPicture={elektro}
+              playlistName="elektro"
+              playlistType="Çalma Listesi"
+              owner="Emre"
+            ></Playlist>
           </div>
         </div>
       </div>
