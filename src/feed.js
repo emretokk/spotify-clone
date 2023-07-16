@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Header } from "./components/header";
 
 export class Feed extends Component {
   constructor(props) {
@@ -7,8 +8,8 @@ export class Feed extends Component {
   }
   render() {
     return (
-      <div className="feed col-start-2 col-end-5 rounded-lg bg-red-400">
-        asdf
+      <div className="feed col-start-2 col-end-5 rounded-lg bg-gradient-to-b from-[#222222] from-0% via-[#121212] via-40% to-[#121212] to-100%">
+        <Header></Header>
       </div>
     );
   }
