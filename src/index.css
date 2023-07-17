@@ -21,3 +21,6 @@
 .playlists::-webkit-scrollbar {
   display: none;
 }
+.feed::-webkit-scrollbar {
+  display: none;
+}

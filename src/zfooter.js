@@ -10,14 +10,14 @@ export class Footer extends Component {
   }
   render() {
     return (
-      <div className="footer col-start-1 flex justify-between absolute bottom-0 bg-black w-screen h-24">
+      <div className="footer col-start-1 flex justify-between sticky bottom-0 bg-black w-screen h-24">
         <PlayingCover
           curPlayingName="Fly Forever"
           curPlayingArtist="Pentagram"
           liked="1"
         ></PlayingCover>
         <PlayingBar curPlayingLength="6:24"></PlayingBar>
-        <PlayingOptions></PlayingOptions>
+        <PlayingOptions volume="10"></PlayingOptions>
       </div>
     );
   }

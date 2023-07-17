@@ -32,23 +32,22 @@ export class PlayingOptions extends Component {
             onMouseEnter={this.mouseOnVolumeBar}
             onMouseLeave={this.mouseOutVolumeBar}
           >
-            <div className="volumeBar w-full h-1 bg-spotify-background-light-gray-4">
+            <div
+              className={`volumeBar w-full h-1 bg-spotify-background-light-gray-4`}
+            >
               <div
                 className={
                   this.state.mouseOnVolume === "true"
-                    ? "curVolumeBar h-full bg-spotify-green " +
-                      "w-".concat(this.state.volume)
-                    : "curVolumeBar h-full bg-white " +
-                      "w-".concat(this.state.volume)
+                    ? `curVolumeBar h-full bg-spotify-green w-10`
+                    : `curVolumeBar h-full bg-white w-10`
                 }
               ></div>
             </div>
             <div
               className={
                 this.state.mouseOnVolume === "true"
-                  ? "volumeCircle absolute w-3 h-3 rounded-full bg-white " +
-                    "left-".concat(this.state.volume)
-                  : ""
+                  ? `volumeCircle absolute w-3 h-3 rounded-full bg-white left-10`
+                  : `volumeCircle hidden`
               }
             ></div>
           </div>

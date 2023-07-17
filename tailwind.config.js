@@ -18,6 +18,8 @@ module.exports = {
         "spotify-background-light-gray-6": "#a6a6a6",
         "spotify-text-color": "#b3b3b3",
         "spotify-green": "#1cc558",
+        "spotify-green-1": "#1ed760",
+        "spotify-green-2": "#1fdf64",
         "spotify-white": "#fbfbfb",
       },
     },
