@@ -24,3 +24,6 @@
 .feed::-webkit-scrollbar {
   display: none;
 }
+.friends-tab::-webkit-scrollbar {
+  display: none;
+}

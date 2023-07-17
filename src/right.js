@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Friends } from "./components/friends";
 
 export class Right extends Component {
   constructor(props) {
@@ -7,7 +8,9 @@ export class Right extends Component {
   }
   render() {
     return (
-      <div className="right col-start-5 mr-2 rounded-lg bg-spotify-background-gray"></div>
+      <div className="right col-start-5 mr-2 rounded-lg bg-spotify-background-gray">
+        <Friends></Friends>
+      </div>
     );
   }
 }
